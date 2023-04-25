@@ -1,11 +1,11 @@
-import { fetchAllPools, getConfig } from "@ref_finance/ref-sdk";
+import { fetchAllPools, getConfig } from '@ref-finance/ref-sdk';
 
-import fs from "fs";
+import fs from 'fs';
 
 console.log({
   config: getConfig(),
 });
 
 fetchAllPools(100).then((allPools) => {
-  fs.writeFileSync("pooldata.json", JSON.stringify(allPools));
+  fs.writeFileSync('pooldata.json', JSON.stringify(allPools));
 });

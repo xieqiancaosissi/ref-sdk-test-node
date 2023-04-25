@@ -1,8 +1,8 @@
-import { config, getConfig, switchEnv, init_env, fetchAllPools } from "@ref_finance/ref-sdk";
+import { config, getConfig, switchEnv, init_env, fetchAllPools } from '@ref-finance/ref-sdk';
 
-init_env("mainnet");
+init_env('mainnet');
 
 console.log(config);
 
-init_env("testnet");
+init_env('testnet');
 console.log(config);
